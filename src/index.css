@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #3674B5;
+  --color-secondary: #578FCA;
+  --color-text-primary: #000000;
+  --color-text-secondary: #777777;
+  --color-primary: #aab9ff;
+  --color-primary: #aab9ff;
+  --color-primary: #aab9ff;
+  --color-primary: #aab9ff;
+}
+
+@layer base {
+  [data-theme='ocean'] {
+    --color-primary: #777777;
+  }
+
+  [data-theme='rainforest'] {
+    --color-primary: #56d0a0;
+  }
+
+  [data-theme='candy'] {
+    --color-primary: #f9a8d4;
+  }
+}
