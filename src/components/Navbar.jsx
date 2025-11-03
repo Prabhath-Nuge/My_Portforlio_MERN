@@ -1,4 +1,4 @@
-import { Menu, X } from "lucide-react";
+import { FolderCode, Menu, Minus, User, X } from "lucide-react";
 import { useState } from "react";
 import logo from '../assets/logo.png';
 
@@ -19,9 +19,14 @@ const Navbar = () => {
         <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80 bg-primary/80">
             <div className="container px-4 mx-auto relative lg:text-sm">
                 <div className="flex justify-between items-center">
-                    <div className="flex items-center flex-shrink-0 bg-[#3f4c81]/20 rounded-2xl px-2 py-1">
-                        <img className="h-10 mr-2 drop-shadow-md" src={logo} alt="Logo" />
-                        {/* <span className="text-xl tracking-tight">VirtualR</span> */}
+                    <div className="flex items-center bg-secondary/10 rounded-2xl px-3 py-1 gap-2 hover:bg-secondary/20 cursor-pointer transition-colors duration-200 ease-in-out">
+                        <FolderCode className="w-8 h-8 text-text-secondary drop-shadow-sm" />
+
+                        <Minus className="w-10 h-10 text-text-primary/50 rotate-90" />
+
+                        <span className="text-text-primary font-semibold whitespace-nowrap text-lg">
+                            Prabhath Nugekotuwa
+                        </span>
                     </div>
                     <ul className="hidden lg:flex ml-14 space-x-12 text-text-primary font-medium ">
                         {navItems.map((item, index) => (
@@ -31,7 +36,7 @@ const Navbar = () => {
                         ))}
                     </ul>
                     <div className="hidden lg:flex justify-center space-x-12 items-center ">
-                        <a href="#" className="py-2 px-3 border rounded-md hover:bg-secondary/20 shadow-lg hover:scale-102 duration-100 ease-in-out text-text-primary">
+                        <a href="#" className="py-2 px-3 border rounded-md hover:bg-secondary/0 shadow-lg hover:scale-102 duration-100 ease-in-out text-text-primary">
                             Sign In
                         </a>
                         <a
