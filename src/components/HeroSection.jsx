@@ -45,7 +45,7 @@ const HeroSection = () => {
 
             <span className="block text-4xl sm:text-6xl lg:text-7xl">
               Prabhath{" "}<br />
-              <span className="bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
+              <span className="bg-linear-to-r from-primary to-secondary text-transparent bg-clip-text">
                 <TypeAnimation
                   sequence={[
                     "Developer", textAnimationTime,
@@ -68,7 +68,7 @@ const HeroSection = () => {
           <div className="flex gap-4 mt-10">
             <a
               href="#"
-              className="bg-gradient-to-r from-primary to-secondary text-white font-medium py-3 px-6 rounded-md shadow-md hover:scale-[1.05] transition-transform"
+              className="bg-linear-to-r from-primary to-secondary text-white font-medium py-3 px-6 rounded-md shadow-md hover:scale-[1.05] transition-transform"
             >
               Start for free
             </a>
